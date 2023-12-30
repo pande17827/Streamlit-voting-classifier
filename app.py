@@ -9,6 +9,8 @@ from voting_classifier import Voting
 from run_algo import Run
 import pandas as pd
 
+st.title('Voting Classifier Using Different Algos')
+
 obj_data=Datasets()
 
 vote=Voting()
