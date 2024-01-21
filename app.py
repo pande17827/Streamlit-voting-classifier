@@ -21,6 +21,9 @@ def display_pip_freeze():
     except subprocess.CalledProcessError as e:
         st.error(f"Error running 'pip freeze': {e}")
 
+display_pip_freeze()
+
+
 st.title('Voting Classifier Using Different Algos')
 
 obj_data=Datasets()
