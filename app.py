@@ -9,6 +9,18 @@ from voting_classifier import Voting
 from run_algo import Run
 import pandas as pd
 
+import subprocess
+
+def display_pip_freeze():
+    try:
+        # Run the pip freeze command
+        result = subprocess.run(['pip', 'freeze'], stdout=subprocess.PIPE, text=True, check=True)
+
+        # Display the result in a Streamlit text area
+        st.text_area("Pip Freeze Output:", result.stdout, height=400)
+    except subprocess.CalledProcessError as e:
+        st.error(f"Error running 'pip freeze': {e}")
+
 st.title('Voting Classifier Using Different Algos')
 
 obj_data=Datasets()
