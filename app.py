@@ -9,17 +9,6 @@ from voting_classifier import Voting
 from run_algo import Run
 import pandas as pd
 
-import pkg_resources
-
-def display_installed_packages():
-    # Get a list of installed packages and their versions
-    installed_packages = [f"{dist.project_name}=={dist.version}" for dist in pkg_resources.working_set]
-
-    # Display the result in a Streamlit text area
-    st.text_area("Installed Packages:", "\n".join(installed_packages), height=400)
-
-display_installed_packages()
-
 
 
 st.title('Voting Classifier Using Different Algos')
