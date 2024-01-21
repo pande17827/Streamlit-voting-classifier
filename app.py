@@ -9,19 +9,17 @@ from voting_classifier import Voting
 from run_algo import Run
 import pandas as pd
 
-import subprocess
+import pkg_resources
 
-def display_pip_freeze():
-    try:
-        # Run the pip freeze command
-        result = subprocess.run(['pip', 'freeze'], stdout=subprocess.PIPE, text=True, check=True)
+def display_installed_packages():
+    # Get a list of installed packages and their versions
+    installed_packages = [f"{dist.project_name}=={dist.version}" for dist in pkg_resources.working_set]
 
-        # Display the result in a Streamlit text area
-        st.text_area("Pip Freeze Output:", result.stdout, height=400)
-    except subprocess.CalledProcessError as e:
-        st.error(f"Error running 'pip freeze': {e}")
+    # Display the result in a Streamlit text area
+    st.text_area("Installed Packages:", "\n".join(installed_packages), height=400)
 
-display_pip_freeze()
+display_installed_packages()
+
 
 
 st.title('Voting Classifier Using Different Algos')
