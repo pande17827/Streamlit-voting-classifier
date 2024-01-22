@@ -2,11 +2,8 @@
 
 A web application built using Streamlit for creating and visualizing a Voting Classifier with various datasets and machine learning algorithms.
 
-<details>
-  <summary>Click to see project screenshots</summary>
-  <!-- Add your screenshots here -->
-  !https://github.com/iamRahulB/Streamlit-voting-classifier/blob/main/screenshots/Capture.PNG
-</details>
+   ![Capture](https://github.com/iamRahulB/Streamlit-voting-classifier/assets/108116259/94983049-c5fb-4a46-8ed6-ef7cb53cb680)
+
 
 ## Datasets Used
 - XOR
