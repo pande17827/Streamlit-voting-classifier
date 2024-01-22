@@ -5,8 +5,7 @@ A web application built using Streamlit for creating and visualizing a Voting Cl
 <details>
   <summary>Click to see project screenshots</summary>
   <!-- Add your screenshots here -->
-  ![Screenshot 1](url_to_screenshot_1)
-  ![Screenshot 2](url_to_screenshot_2)
+  !https://github.com/iamRahulB/Streamlit-voting-classifier/blob/main/screenshots/Capture.PNG
 </details>
 
 ## Datasets Used
