@@ -66,4 +66,6 @@ A dataframe is shown at the start of the application to provide an overview of t
    streamlit run app.py
    ```
    
+<h2>Usage</h2>
 
+<p>To use the web app, click on the following link: <a href="https://votingclassifier.streamlit.app/">Demo Link</a></p>
